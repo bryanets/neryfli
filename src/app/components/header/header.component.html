@@ -1,0 +1,22 @@
+<nav [ngClass]="{'navbar-hidden': !isNavbarVisible}">
+    <div class="wrapper">
+        <div class="logo"><img src="assets/images/logo.avif" alt=""></div>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn" #navbarToggler>
+        <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a (click)="collapseNavbar(); scrollto('heroBanner')">Inicio</a></li>
+            <li><a (click)="collapseNavbar(); scrollto('nosotros')">Nosotros</a></li>
+            <li><a (click)="collapseNavbar(); scrollto('catalogo')">Catálogo</a></li>
+            <li><a (click)="collapseNavbar()">Blog</a></li>
+            <li>
+                <a (click)="collapseNavbar(); scrollto('recursos')">Recursos</a>
+            </li>
+            <li>
+                <a (click)="collapseNavbar(); scrollto('contacto')">Contáctanos</a>
+            </li>
+
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+</nav>
