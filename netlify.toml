@@ -1,9 +1,0 @@
-[build]
-  base = "neryfil"
-  command = "npm ci && npm run build"
-  publish = "dist/neryfil/browser"
-
-  [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
