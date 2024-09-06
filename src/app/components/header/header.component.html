@@ -1,6 +1,7 @@
 <nav [ngClass]="{'navbar-hidden': !isNavbarVisible}">
     <div class="wrapper">
         <div class="logo"><img src="assets/images/logo.avif" alt=""></div>
+        <label for="menu-btn" class="btn menu-btn me-2"><i class="fas fa-bars"></i></label>
         <input type="radio" name="slider" id="menu-btn">
         <input type="radio" name="slider" id="close-btn" #navbarToggler>
         <ul class="nav-links">
@@ -15,8 +16,6 @@
             <li>
                 <a (click)="collapseNavbar(); scrollto('contacto')">Contáctanos</a>
             </li>
-
         </ul>
-        <label for="menu-btn" class="btn menu-btn me-2"><i class="fas fa-bars"></i></label>
     </div>
 </nav>

@@ -1,0 +1,9 @@
+.container-fluid {
+  width: 100%;
+  background: rgb(245, 245, 245);
+  font-size: 15px;
+  padding: 35px 0px;
+}
+.row {
+  width: 100%;
+}

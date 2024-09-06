@@ -1,12 +1,3 @@
-.container {
-  max-width: 1600px;
-  min-width: 0;
-}
-
-.row {
-  min-width: 0;
-  margin: auto;
-}
 /* HEROBANNER */
 .heroBanner {
   max-width: 98%;
@@ -43,6 +34,11 @@
   display: block;
   width: 100%; /* La imagen ocupa todo el ancho del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.neryfilHerobanner {
+  max-width: 777px;
+  max-height: 180px;
 }
 
 .editorial {
@@ -284,6 +280,7 @@
   background: rgba(246, 249, 255, 0.65);
   flex-shrink: 1;
   min-width: 0;
+  width: 100%;
 }
 
 .p-nosotros {
@@ -541,7 +538,6 @@ p {
   justify-content: flex-start;
   flex: 1;
   height: 290px;
-  min-width: 420px;
   max-width: 530px;
   position: relative;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
@@ -701,7 +697,6 @@ p {
   align-items: center;
   justify-content: center;
   flex: 1;
-  min-width: 420px;
   max-width: 530px;
   position: relative;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
@@ -738,7 +733,6 @@ p {
   justify-content: center;
   align-self: stretch;
   flex-shrink: 0;
-  min-width: 440px;
   position: relative;
   max-width: 1120px;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
@@ -752,7 +746,6 @@ p {
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 370px;
   position: relative;
 }
 
@@ -895,9 +888,33 @@ p {
 
 @media screen and (max-width: 970px) {
   .explora p {
-    font-size: var(--textoherobanner2, 55px);
+    font-size: var(--textoherobanner2, 50px);
     font-weight: 600;
   }
+  .editorial {
+    font-size: var(--textoherobanner2, 30px);
+  }
+
+  .neryfilHerobanner {
+    max-width: 350px;
+    max-height: 150px;
+  }
+
+  .Btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp {
+    width: 50px;
+    height: 50px;
+  }
+
   .estamos {
     margin-bottom: 10px;
   }

@@ -70,14 +70,22 @@ nav .wrapper {
   font-size: 20px;
   cursor: pointer;
   display: none;
+  position: relative;
+}
+.wrapper .btn.menu-btn {
+  margin-right: 20px; /* Ajusta el margen para que no se salga del contenedor */
 }
 .wrapper .btn.close-btn {
   position: absolute;
-  right: 30px;
+  right: 20px;
   top: 10px;
 }
 
 @media screen and (max-width: 970px) {
+  .wrapper {
+    padding-right: 20px; /* Añade un pequeño padding en el lado derecho para evitar que los elementos se salgan */
+  }
+
   .wrapper .logo img {
     margin-left: 20px;
   }
@@ -106,6 +114,14 @@ nav .wrapper {
     overflow: hidden;
     backdrop-filter: blur(10px);
   }
+
+  /* Ajusta la posición del botón del menú hamburguesa */
+  .wrapper .btn.menu-btn {
+    position: absolute;
+    right: 20px; /* Ajusta la posición para que se mantenga dentro del wrapper */
+    top: 10px;
+  }
+
   /* custom scroll bar */
   ::-webkit-scrollbar {
     width: 10px;
