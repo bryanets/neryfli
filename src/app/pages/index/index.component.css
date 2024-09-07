@@ -515,6 +515,7 @@ p {
   flex-direction: row;
   gap: 60px;
   row-gap: 25px;
+  padding: 20px 10px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -525,10 +526,9 @@ p {
   overflow: hidden;
 }
 
-.libros-gruesos {
-  border-radius: 10px;
+.libros {
   border-style: solid;
-  border-color: #c6c6c6;
+  border-color: #f7f7f7;
   border-width: 1px;
   padding: 0px 0px 5px 1px;
   display: flex;
@@ -540,7 +540,8 @@ p {
   height: 290px;
   max-width: 530px;
   position: relative;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) -3px 4px 10px 0px;
 }
 
 .textos {
@@ -656,23 +657,6 @@ p {
   justify-content: center;
 }
 
-.button-comprar {
-  background: #a7ffba;
-  border-radius: 7px;
-  border-style: solid;
-  border-color: #f0f0f0;
-  border-width: 2px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 245px;
-  height: 40px;
-  position: relative;
-}
-
 .comprar {
   color: #000000;
   text-align: center;
@@ -683,23 +667,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.libros-delgados {
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #c6c6c6;
-  border-width: 1px;
-  padding: 0px 0px 5px 1px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  max-width: 530px;
-  position: relative;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
 .textos2 {
@@ -721,10 +688,9 @@ p {
 }
 
 .precio-total {
-  background: #ffffff;
   border-radius: 10px;
   border-style: solid;
-  border-color: #c6c6c6;
+  border-color: #f7f7f7;
   border-width: 1px;
   display: flex;
   flex-direction: column;
@@ -735,7 +701,7 @@ p {
   flex-shrink: 0;
   position: relative;
   max-width: 1120px;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(149, 157, 165, 0.2) -3px 4px 10px 0px;
 }
 
 .lbros-coleccion {
@@ -928,7 +894,120 @@ p {
 .defer {
   width: 100%;
   height: 1000px;
-  border-style: solid;
-  border-color: #dc2743;
-  background: #bc1888;
+  background: #ffffff;
+}
+
+/* BUTTON COMPRAR */
+/* From Uiverse.io by mobinkakei */
+
+.button-shine {
+  position: relative;
+  margin: 0;
+  padding: 9px 45px;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #a7ffba;
+  border-radius: 10px;
+  color: #a7ffba;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  box-shadow: -5px -5px 5px #f5f5f5, 5px 5px 5px #ffffff;
+}
+
+.button-shine span {
+  color: #020202;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.button-shine:hover {
+  animation: rotate624 0.7s ease-in-out both;
+}
+
+.button-shine:hover span {
+  animation: storm1261 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes rotate624 {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes storm1261 {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+.btn-shine {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-shine span {
+  z-index: 20;
+}
+
+.btn-shine:after {
+  background: #38ef7d;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.4;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+
+.btn-shine:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }

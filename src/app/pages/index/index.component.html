@@ -24,7 +24,7 @@
             <p><span style="color: rgb(25, 0, 255);">nosotros.</span></p>
         </div>
         <div class="d-flex justify-content-between column-gap-5 mb-3">
-            <button class="Btn">
+            <button class="Btn" onclick="window.open('https://www.instagram.com/neryfilperu/', '_blank');">
                 <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 448 512" class="svgIcon">
                     <path
                         d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
@@ -34,9 +34,11 @@
             </button>
 
 
-            <button class="button">
+            <button class="button" onclick="window.open('https://www.facebook.com/CorporacionNeryfil', '_blank');">
             </button>
-            <button class="whatsapp">
+
+            <button class="whatsapp"
+                onclick="window.open('https://wa.me/51907724752?text=Hola,%20necesito%20información%20sobre%20los%20libros%20que%20ofrecen.', '_blank');">
                 <img src="assets/images/whatsapp.avif" alt="" class="svgIcon">
                 <span class="text">whatsapp</span>
             </button>
@@ -142,7 +144,7 @@
 
         <div class="container">
             <div class="precios d-flex justify-content-between mb-4">
-                <div class="libros-gruesos mx-auto">
+                <div class="libros mx-auto">
                     <div class="textos">
                         <div class="comunicaci-n"> Comunicación </div>
                         <div class="matem-tica"> Matemática<br /><br /><br /><br /><br /><br /> </div>
@@ -155,13 +157,14 @@
                         </div>
                         <div class="precio-button">
                             <div class="s-60"> S/60 </div>
-                            <div class="button-comprar">
-                                <div class="comprar"> Comprar </div>
-                            </div>
+                            <button class="btn-shine button-shine"
+                                onclick="window.open('https://wa.me/51907724752?text=Hola,%20deseo%20adquirir%20los%20libros%20de%20comunicación,%20matemática%20y%20personal%20social%20-%20C.T.A.', '_blank');">
+                                <span>Comprar</span>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="libros-delgados mx-auto">
+                <div class="libros mx-auto">
                     <div class="textos2">
                         <div class="comunicaci-n"> Raz. Matemático </div>
                         <div class="matem-tica"> Trazos-grafías<br /><br /><br /><br /><br /><br /> </div>
@@ -174,9 +177,10 @@
                         </div>
                         <div class="precio-button">
                             <div class="s-60"> S/30 </div>
-                            <div class="button-comprar">
-                                <div class="comprar"> Comprar </div>
-                            </div>
+                            <button class="btn-shine button-shine"
+                                onclick="window.open('https://wa.me/51907724752?text=Hola,%20deseo%20adquirir%20los%20libros%20de%20raz.%20Matemático,%20trazo-grafía%20y%20ingles.', '_blank');">
+                                <span>Comprar</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -188,9 +192,10 @@
                     </div>
                     <div class="precio">
                         <div class="s-230"> S/230 </div>
-                        <div class="button-comprar2">
-                            <div class="comprar"> Comprar </div>
-                        </div>
+                        <button class="btn-shine button-shine"
+                            onclick="window.open('https://wa.me/51907724752?text=Hola,%20deseo%20adquirir%20la%20colección%20completa.', '_blank');">
+                            <span>Comprar</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -266,61 +271,69 @@
                 <div class="mx-auto">
                     <h5 class="my-3">Contáctanos</h5>
                     <div class="redes d-flex justify-content-center my-3">
-                        <svg class="icon-whatsapp" width="71" height="71" viewBox="0 0 71 71" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M60 0.5H11C5.20101 0.5 0.5 5.20101 0.5 11V60C0.5 65.799 5.20101 70.5 11 70.5H60C65.799 70.5 70.5 65.799 70.5 60V11C70.5 5.20101 65.799 0.5 60 0.5Z"
-                                fill="#25D366" />
-                            <path
-                                d="M17.7023 55.4674L19.6604 46.3761C17.1436 42.4065 16.1618 37.6549 16.8992 33.0129C17.6366 28.3709 20.0425 24.1574 23.6654 21.1631C27.2884 18.1687 31.8795 16.5993 36.5773 16.7492C41.2751 16.8991 45.7568 18.7581 49.1815 21.9773C52.6063 25.1965 54.7386 29.5548 55.1785 34.2343C55.6185 38.9139 54.3357 43.5932 51.571 47.3943C48.8063 51.1954 44.7496 53.8571 40.162 54.8799C35.5744 55.9027 30.7713 55.2164 26.6537 52.9498L17.7023 55.4674Z"
-                                fill="#25D366" stroke="white" stroke-width="8.99063" />
-                            <path
-                                d="M43.5792 38.6835C43.1596 38.4038 42.74 38.2639 42.3204 38.8234L40.6421 41.0612C40.2225 41.341 39.9427 41.4808 39.3833 41.2011C37.2853 40.0822 34.3481 38.8234 31.8305 34.6274C31.6906 34.0679 31.9704 33.7882 32.2501 33.5084L33.5089 31.5503C33.7886 31.2706 33.6487 30.9909 33.5089 30.7111L31.8305 26.655C31.4109 25.5361 30.9913 25.6759 30.5717 25.6759H29.4528C29.173 25.6759 28.6136 25.8158 28.0541 26.3753C24.977 29.4523 26.2358 33.7882 28.4737 36.5855C28.8933 37.145 31.6906 42.1802 37.7049 44.8376C42.1806 46.7957 43.1596 46.516 44.4184 46.2363C45.957 46.0964 47.4955 44.8376 48.1948 43.5788C48.3347 43.1592 49.034 41.341 48.4746 41.0612"
-                                fill="white" />
-                        </svg>
-                        <svg class="icon-facebook" width="71" height="71" viewBox="0 0 71 71" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M60 0.5H11C5.20101 0.5 0.5 5.20101 0.5 11V60C0.5 65.799 5.20101 70.5 11 70.5H60C65.799 70.5 70.5 65.799 70.5 60V11C70.5 5.20101 65.799 0.5 60 0.5Z"
-                                fill="#1877F2" />
-                            <path
-                                d="M49.1172 45.6171L50.6758 35.4999H40.9688V28.9374C40.9688 26.1757 42.3223 23.4687 46.6699 23.4687H51.0859V14.8554C51.0859 14.8554 47.0801 14.1718 43.252 14.1718C35.2539 14.1718 30.0312 19.0117 30.0312 27.789V35.4999H21.1445V45.6171H30.0312V70.4999H40.9688V45.6171H49.1172Z"
-                                fill="white" />
-                        </svg>
-                        <svg class="icon-instagram" width="71" height="71" viewBox="0 0 71 71" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M60 0.5H11C5.20101 0.5 0.5 5.20101 0.5 11V60C0.5 65.799 5.20101 70.5 11 70.5H60C65.799 70.5 70.5 65.799 70.5 60V11C70.5 5.20101 65.799 0.5 60 0.5Z"
-                                fill="black" />
-                            <path
-                                d="M60 0.5H11C5.20101 0.5 0.5 5.20101 0.5 11V60C0.5 65.799 5.20101 70.5 11 70.5H60C65.799 70.5 70.5 65.799 70.5 60V11C70.5 5.20101 65.799 0.5 60 0.5Z"
-                                fill="url(#paint0_radial_2060_420)" />
-                            <path
-                                d="M60 0.5H11C5.20101 0.5 0.5 5.20101 0.5 11V60C0.5 65.799 5.20101 70.5 11 70.5H60C65.799 70.5 70.5 65.799 70.5 60V11C70.5 5.20101 65.799 0.5 60 0.5Z"
-                                fill="url(#paint1_linear_2060_420)" />
-                            <path
-                                d="M45.4805 14.4453H25.5195C19.4034 14.4453 14.4453 19.4034 14.4453 25.5195V45.4805C14.4453 51.5966 19.4034 56.5547 25.5195 56.5547H45.4805C51.5966 56.5547 56.5547 51.5966 56.5547 45.4805V25.5195C56.5547 19.4034 51.5966 14.4453 45.4805 14.4453Z"
-                                stroke="white" stroke-width="8.79712" />
-                            <path
-                                d="M35.5 45.3438C40.9366 45.3438 45.3438 40.9366 45.3438 35.5C45.3438 30.0634 40.9366 25.6562 35.5 25.6562C30.0634 25.6562 25.6562 30.0634 25.6562 35.5C25.6562 40.9366 30.0634 45.3438 35.5 45.3438Z"
-                                stroke="white" stroke-width="8.79712" />
-                            <path
-                                d="M47.9414 23.8789C48.3945 23.8789 48.7617 23.5116 48.7617 23.0586C48.7617 22.6055 48.3945 22.2383 47.9414 22.2383C47.4884 22.2383 47.1211 22.6055 47.1211 23.0586C47.1211 23.5116 47.4884 23.8789 47.9414 23.8789Z"
-                                stroke="white" stroke-width="8.79712" />
-                            <defs>
-                                <radialGradient id="paint0_radial_2060_420" cx="0" cy="0" r="1"
-                                    gradientUnits="userSpaceOnUse" gradientTransform="translate(28.5 70.5) scale(70)">
-                                    <stop offset="0.1" stop-color="#FFDD55" />
-                                    <stop offset="0.5" stop-color="#FF543E" />
-                                    <stop offset="1" stop-color="#C837AB" />
-                                </radialGradient>
-                                <linearGradient id="paint1_linear_2060_420" x1="0.5" y1="0.5" x2="14.5" y2="70.5"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop offset="0.1" stop-color="#3771C8" />
-                                    <stop offset="0.5" stop-color="#6600FF" stop-opacity="0" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
+                        <a href="https://wa.me/51907724752?text=Hola,%20necesito%20información%20sobre%20los%20libros%20que%20ofrecen."
+                            target="_blank">
+                            <svg class="icon-whatsapp" width="71" height="71" viewBox="0 0 71 71" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M60 0.5H11C5.20101 0.5 0.5 5.20101 0.5 11V60C0.5 65.799 5.20101 70.5 11 70.5H60C65.799 70.5 70.5 65.799 70.5 60V11C70.5 5.20101 65.799 0.5 60 0.5Z"
+                                    fill="#25D366" />
+                                <path
+                                    d="M17.7023 55.4674L19.6604 46.3761C17.1436 42.4065 16.1618 37.6549 16.8992 33.0129C17.6366 28.3709 20.0425 24.1574 23.6654 21.1631C27.2884 18.1687 31.8795 16.5993 36.5773 16.7492C41.2751 16.8991 45.7568 18.7581 49.1815 21.9773C52.6063 25.1965 54.7386 29.5548 55.1785 34.2343C55.6185 38.9139 54.3357 43.5932 51.571 47.3943C48.8063 51.1954 44.7496 53.8571 40.162 54.8799C35.5744 55.9027 30.7713 55.2164 26.6537 52.9498L17.7023 55.4674Z"
+                                    fill="#25D366" stroke="white" stroke-width="8.99063" />
+                                <path
+                                    d="M43.5792 38.6835C43.1596 38.4038 42.74 38.2639 42.3204 38.8234L40.6421 41.0612C40.2225 41.341 39.9427 41.4808 39.3833 41.2011C37.2853 40.0822 34.3481 38.8234 31.8305 34.6274C31.6906 34.0679 31.9704 33.7882 32.2501 33.5084L33.5089 31.5503C33.7886 31.2706 33.6487 30.9909 33.5089 30.7111L31.8305 26.655C31.4109 25.5361 30.9913 25.6759 30.5717 25.6759H29.4528C29.173 25.6759 28.6136 25.8158 28.0541 26.3753C24.977 29.4523 26.2358 33.7882 28.4737 36.5855C28.8933 37.145 31.6906 42.1802 37.7049 44.8376C42.1806 46.7957 43.1596 46.516 44.4184 46.2363C45.957 46.0964 47.4955 44.8376 48.1948 43.5788C48.3347 43.1592 49.034 41.341 48.4746 41.0612"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/CorporacionNeryfil" target="_blank">
+                            <svg class="icon-facebook" width="71" height="71" viewBox="0 0 71 71" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M60 0.5H11C5.20101 0.5 0.5 5.20101 0.5 11V60C0.5 65.799 5.20101 70.5 11 70.5H60C65.799 70.5 70.5 65.799 70.5 60V11C70.5 5.20101 65.799 0.5 60 0.5Z"
+                                    fill="#1877F2" />
+                                <path
+                                    d="M49.1172 45.6171L50.6758 35.4999H40.9688V28.9374C40.9688 26.1757 42.3223 23.4687 46.6699 23.4687H51.0859V14.8554C51.0859 14.8554 47.0801 14.1718 43.252 14.1718C35.2539 14.1718 30.0312 19.0117 30.0312 27.789V35.4999H21.1445V45.6171H30.0312V70.4999H40.9688V45.6171H49.1172Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/neryfilperu/" target="_blank">
+                            <svg class="icon-instagram" width="71" height="71" viewBox="0 0 71 71" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M60 0.5H11C5.20101 0.5 0.5 5.20101 0.5 11V60C0.5 65.799 5.20101 70.5 11 70.5H60C65.799 70.5 70.5 65.799 70.5 60V11C70.5 5.20101 65.799 0.5 60 0.5Z"
+                                    fill="black" />
+                                <path
+                                    d="M60 0.5H11C5.20101 0.5 0.5 5.20101 0.5 11V60C0.5 65.799 5.20101 70.5 11 70.5H60C65.799 70.5 70.5 65.799 70.5 60V11C70.5 5.20101 65.799 0.5 60 0.5Z"
+                                    fill="url(#paint0_radial_2060_420)" />
+                                <path
+                                    d="M60 0.5H11C5.20101 0.5 0.5 5.20101 0.5 11V60C0.5 65.799 5.20101 70.5 11 70.5H60C65.799 70.5 70.5 65.799 70.5 60V11C70.5 5.20101 65.799 0.5 60 0.5Z"
+                                    fill="url(#paint1_linear_2060_420)" />
+                                <path
+                                    d="M45.4805 14.4453H25.5195C19.4034 14.4453 14.4453 19.4034 14.4453 25.5195V45.4805C14.4453 51.5966 19.4034 56.5547 25.5195 56.5547H45.4805C51.5966 56.5547 56.5547 51.5966 56.5547 45.4805V25.5195C56.5547 19.4034 51.5966 14.4453 45.4805 14.4453Z"
+                                    stroke="white" stroke-width="8.79712" />
+                                <path
+                                    d="M35.5 45.3438C40.9366 45.3438 45.3438 40.9366 45.3438 35.5C45.3438 30.0634 40.9366 25.6562 35.5 25.6562C30.0634 25.6562 25.6562 30.0634 25.6562 35.5C25.6562 40.9366 30.0634 45.3438 35.5 45.3438Z"
+                                    stroke="white" stroke-width="8.79712" />
+                                <path
+                                    d="M47.9414 23.8789C48.3945 23.8789 48.7617 23.5116 48.7617 23.0586C48.7617 22.6055 48.3945 22.2383 47.9414 22.2383C47.4884 22.2383 47.1211 22.6055 47.1211 23.0586C47.1211 23.5116 47.4884 23.8789 47.9414 23.8789Z"
+                                    stroke="white" stroke-width="8.79712" />
+                                <defs>
+                                    <radialGradient id="paint0_radial_2060_420" cx="0" cy="0" r="1"
+                                        gradientUnits="userSpaceOnUse"
+                                        gradientTransform="translate(28.5 70.5) scale(70)">
+                                        <stop offset="0.1" stop-color="#FFDD55" />
+                                        <stop offset="0.5" stop-color="#FF543E" />
+                                        <stop offset="1" stop-color="#C837AB" />
+                                    </radialGradient>
+                                    <linearGradient id="paint1_linear_2060_420" x1="0.5" y1="0.5" x2="14.5" y2="70.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.1" stop-color="#3771C8" />
+                                        <stop offset="0.5" stop-color="#6600FF" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </a>
                     </div>
                     <h5 class="my-3">Librería: "Mi Jesús"</h5>
                     <h5 class="my-3">Dirección: Mz. H Lt. 12 III Etapa</h5>
