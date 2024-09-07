@@ -852,6 +852,13 @@ p {
   margin-top: 100px;
 }
 
+/* CONTACTANOS */
+.contacto_img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 @media screen and (max-width: 970px) {
   .explora p {
     font-size: var(--textoherobanner2, 50px);
