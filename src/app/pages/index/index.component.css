@@ -284,11 +284,14 @@
 }
 
 .p-nosotros {
-  color: #000000;
   text-align: justify;
   font-size: 15px;
   font-weight: 400;
   max-width: 860px;
+}
+
+h4 {
+  color: #002221;
 }
 
 .nosotro .img {
@@ -565,7 +568,7 @@ p {
 .comunicaci-n {
   color: #000000;
   text-align: left;
-  font-family: "Poppins-Regular", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 400;
   position: relative;
@@ -578,7 +581,7 @@ p {
 .matem-tica {
   color: #000000;
   text-align: left;
-  font-family: "Poppins-Regular", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 400;
   position: relative;
@@ -589,7 +592,7 @@ p {
 .personal-social-c-t-a {
   color: #000000;
   text-align: center;
-  font-family: "Poppins-Regular", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 400;
   position: relative;
@@ -780,6 +783,11 @@ p {
   position: relative;
 }
 
+.precio-unitario-p {
+  color: #b4b4b4;
+  font-size: 13px;
+  font-weight: 200;
+}
 /* CONTACTANOS */
 
 .coleccion-text {
@@ -918,7 +926,7 @@ p {
   align-items: center;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: #fff;
+  background-color: #fbffff;
   border: 1px solid #a7ffba;
   border-radius: 10px;
   color: #a7ffba;
