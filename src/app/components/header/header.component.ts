@@ -16,6 +16,7 @@ export class HeaderComponent {
 
   constructor(private viewPortScroller: ViewportScroller) { }
 
+
   collapseNavbar(): void {
     if (window.innerWidth < 992) {
       this.navbarToggler.nativeElement.click();
