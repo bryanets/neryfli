@@ -1,10 +1,11 @@
 import { NgClass, ViewportScroller } from '@angular/common';
 import { Component, ElementRef, ViewChild, HostListener } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -14,7 +15,8 @@ export class HeaderComponent {
 
   @ViewChild('navbarToggler') navbarToggler!: ElementRef;
 
-  constructor(private viewPortScroller: ViewportScroller) { }
+  constructor(private viewPortScroller: ViewportScroller) {
+  }
 
 
   collapseNavbar(): void {
@@ -42,5 +44,10 @@ export class HeaderComponent {
     }
 
     this.lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+  }
+
+  openInNewTab(event: Event): void {
+    event.preventDefault(); // Evita que el enlace siga su comportamiento predeterminado
+    window.open('/construccion', '_blank'); // Abre la ruta en una nueva pestaña
   }
 }

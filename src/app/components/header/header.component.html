@@ -9,12 +9,14 @@
             <li><a (click)="collapseNavbar(); scrollto('heroBanner')">Inicio</a></li>
             <li><a (click)="collapseNavbar(); scrollto('nosotros')">Nosotros</a></li>
             <li><a (click)="collapseNavbar(); scrollto('catalogo')">Catálogo</a></li>
-            <li><a (click)="collapseNavbar()">Blog</a></li>
             <li>
                 <a (click)="collapseNavbar(); scrollto('recursos')">Recursos</a>
             </li>
             <li>
                 <a (click)="collapseNavbar(); scrollto('contacto')">Contáctanos</a>
+            </li>
+            <li>
+                <a (click)="collapseNavbar();openInNewTab($event)">Intranet</a>
             </li>
         </ul>
     </div>

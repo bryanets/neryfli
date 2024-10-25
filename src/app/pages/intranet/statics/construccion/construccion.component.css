@@ -1,0 +1,15 @@
+.image-container {
+  margin: 0;
+  padding: 0;
+  height: 87vh; /* Asegura que ocupe toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.centered-image {
+  max-width: 100%;
+  max-height: 100%;
+}
